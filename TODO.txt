@@ -1,0 +1,28 @@
+We are trying to make a media server using a webserver.
+- We have a raspberry pi running node express
+- Connected to the pi is x amount of storage
+    - We have have folders named of anime within these storage
+    - inside each folder will be a picture showing the anime
+
+
+TODO
+    x- Create a response from server
+        x- Try to get the raspberry pi able to answer request from within lan and wan
+    - Create a db for list of name
+        - Either
+            - loop all folders each time
+            - Add them manually and after add when a put request is made
+    - Add Images included within folder to that db
+        - Same as list for names
+    - Make that db answer to api calls
+        - using the db, be able to spit out the info collected by the db
+    - Build a website able to display the list of names
+    - Response of EP   
+        - page to show how many ep
+        - Able to tranfer/stream the mp4 file (watch the ep)
+    - Able to upload new anime to storage
+        - Add name and image to db when uploading
+    - Design name/image pair website
+        - Make website look nicer using images from db
+    - FINISHED
+
