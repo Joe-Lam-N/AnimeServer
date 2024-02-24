@@ -1,0 +1,59 @@
+login 
+    mysql -u root -p
+show users
+    SELECT User, Host FROM mysql.user;
+create User 
+    CREATE USER "someuser"@"localhost" IDENTIFIED BY "somepassword";
+Grant Permission
+    GRANT ALL PRIVILEGES ON * . * TO "someuser"@"localhost";
+Exit
+    exit;
+show databases
+    SHOW DATABASES;
+create database
+    CREATE DATABASE databaseName;
+delete database 
+    DROP DATABASE databaseName;
+select database
+    USE databaseName
+Create Table 
+    CREATE TABLE tableName(
+        id INT AUTO_INCREMENT,
+        PRIMARY KEY(id)
+        columns
+        (format
+            name datatype)
+    )
+delete table
+    DROP TABLE tableName;
+show Table
+    SHOW TABLES:
+insert row
+    INSERT INTO tableName (columnNames) values ("inputValuess");
+Select 
+    SELECT * FROM tableName
+Delete row
+    DELETE FROM tableName WHERE id = 6;
+Update Row 
+    UPDATE users SET EMAIL = " freddyy@gmail.com" WHERE id =2;
+Searching
+    SELECT * FROM users WHERE dept LIKE "someInput";
+
+{{{
+Execute the following query in MYSQL Workbench
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+Where root as your user localhost as your URL and password as your password
+
+Then run this query to refresh privileges:
+
+flush privileges;
+
+Try connecting using node after you do so.
+
+If that doesn't work, try it without @'localhost' part.}}}
+
+
+https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3
+https://www.mysqltutorial.org/mysql-cheat-sheet/
