@@ -20,14 +20,16 @@ Create Table
     CREATE TABLE tableName(
         id INT AUTO_INCREMENT,
         PRIMARY KEY(id)
-        columns
+        {columns
         (format
-            name datatype)
+            name datatype)}
     )
 delete table
     DROP TABLE tableName;
 show Table
     SHOW TABLES:
+list tables contents
+    DESCRIBE table_name;
 insert row
     INSERT INTO tableName (columnNames) values ("inputValuess");
 Select 
@@ -57,3 +59,16 @@ If that doesn't work, try it without @'localhost' part.}}}
 
 https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3
 https://www.mysqltutorial.org/mysql-cheat-sheet/
+
+
+
+temp notes
+/mnt/24b5420b-2f74-4da7-a8e8-ee3bea0f4b99D1/Anime/The_Apothecay_Diaries
+/mnt/24b5420b-2f74-4da7-a8e8-ee3bea0f4b99D1/Anime/The_Apothecay_Diaries/Img
+
+The_Apothecay_Diaries
+Mushku_Tensei:_Jobless_Reincarnation 
+
+
+
+INSERT INTO Anime (Name, Location, ImageLocation, EpNumber) values ("Mushku_Tensei:_Jobless_Reincarnation", "/mnt/24b5420b-2f74-4da7-a8e8-ee3bea0f4b99D1/Anime/Mushku_Tensei:_Jobless_Reincarnation", "/mnt/24b5420b-2f74-4da7-a8e8-ee3bea0f4b99D1/Anime/Mushku_Tensei:_Jobless_Reincarnation/Img", "0");
